@@ -13,6 +13,7 @@ typedef int S32;
 typedef short S16;
 typedef char S8;
 
+typedef void Void;
 typedef bool Bool;
 
 typedef enum {
