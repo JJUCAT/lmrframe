@@ -9,7 +9,7 @@ namespace lmr {
 class Clock : public Obj
 {
 
-}
+};
 
 
 

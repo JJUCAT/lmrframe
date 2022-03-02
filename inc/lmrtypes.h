@@ -16,6 +16,8 @@ typedef char S8;
 typedef void Void;
 typedef bool Bool;
 
+
+
 typedef enum {
     DISABLE = 0,
     ENABLE,
@@ -23,6 +25,8 @@ typedef enum {
 
 
 typedef std::string String;
+typedef time_t Time_t;
+
 
 } // namespace lmr
 
