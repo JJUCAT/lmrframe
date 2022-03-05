@@ -1,16 +1,14 @@
 #ifndef __OBJ_H__
 #define __OBJ_H__
 
-#include "lmrcfg.h"
 #include "lmrtypes.h"
-#include "lmrlog.h"
 
 namespace lmr {
 
 class Obj
 {
 public:
-    explicit Obj(const String& name);
+    explicit Obj(const String& name = "obj");
     virtual ~Obj();
 
     Void SetName(String name);
