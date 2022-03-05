@@ -3,6 +3,7 @@
 
 #include "lmrtypes.h"
 
+#if 0
 namespace lmr {
 
 class Obj
@@ -18,5 +19,6 @@ private:
 }; // class Obj
 
 } // namespace lmr
+#endif
 
 #endif //  __OBJ_H__
