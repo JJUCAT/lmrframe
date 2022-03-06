@@ -1,0 +1,4 @@
+/home/lmr/MyGit/lmrframe/build/CMakeFiles/rebuild_cache.dir
+/home/lmr/MyGit/lmrframe/build/CMakeFiles/edit_cache.dir
+/home/lmr/MyGit/lmrframe/build/CMakeFiles/testlmrframe.dir
+/home/lmr/MyGit/lmrframe/build/CMakeFiles/lmrframe.dir

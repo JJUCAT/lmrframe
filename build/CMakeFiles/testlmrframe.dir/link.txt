@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/testlmrframe.dir/test/main.cpp.o CMakeFiles/testlmrframe.dir/src/clock.cpp.o CMakeFiles/testlmrframe.dir/src/logger.cpp.o CMakeFiles/testlmrframe.dir/src/obj.cpp.o  -o testlmrframe 

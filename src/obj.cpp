@@ -1,18 +1,27 @@
 #include "lmrtypes.h"
 #include "obj.h"
 
-#if 0
+
 namespace lmr {
 
-explicit Obj::Obj(const String& name = "obj");
+Obj::Obj():name_("noone")
 {
+    printf("Obj struct,name = %s\n", name_.c_str());
+}
 
+Obj::Obj(const String& name):name_(name)
+{
+    printf("Obj struct,name = %s\n", name_.c_str());
 }
 
 Obj::~Obj()
 {
-
+    printf("Obj destruct\n");
 }
-#endif
+
+String Obj::GetName()
+{
+    return name_;
+}
 
 } // namespace lmr

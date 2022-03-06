@@ -1,40 +1,50 @@
-#版本要求
+#cmake version required
 cmake_minimum_required(VERSION 3.13)
-#设置工程名
+#set project name
 project(lmrframe)
-#设置版本号：主版本号.子版本号.补丁号
+#set project version：major.minor.patch
 set(VERSION_MAJOR 0)
 set(VERSION_MINOR 1)
 set(VERSION_PATCH 0)
 
-#设置 C++ 版本
+#set C++ version
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-#打印信息
+#cmake log
 set(PROJ_NAME lmrframe)
 message(STATUS "building: " ${PROJ_NAME})
 
-#获取工程根目录
+#get project root directory
 set(ROOT_DIR ${CMAKE_SOURCE_DIR})
 
 
 set(INC ${ROOT_DIR}/inc)
 set(INC_LIST ${INC})
-#设置头文件包含路径
+#set include directories
 include_directories(${INC_LIST})
 
-#获取目录下的所有文件
+#get files in directory
 aux_source_directory(${ROOT_DIR}/src SRC)
-#设置源文件
+#set source directories
 set(SRC_LIST ${SRC})
 
+set(MAIN ${ROOT_DIR}/main.cpp)
+
 set(CMAKE_CFG ${ROOT_DIR}/build)
-#根据 xxx.h.in 导出变量到 xxx.h
+#export xxx.h.in variable to xxx.h
 configure_file(${CMAKE_CFG}/version.h.in ${INC}/version.h)
 
-#编译可执行文件
-add_executable(lmrframe ${SRC_LIST})
+#get test files
+aux_source_directory(${ROOT_DIR}/test TEST)
+set(TEST_LIST ${TEST})
+
+set(LMRFRAME ${SRC_LIST} ${MAIN})
+
+#compile executable file lmrframe
+add_executable(lmrframe ${LMRFRAME})
+#compile executable file testlmrframe
+add_executable(testlmrframe ${TEST_LIST} ${SRC_LIST})
 
 target_include_directories(lmrframe PUBLIC "${PROJECT_BINARY_DIR}")
 

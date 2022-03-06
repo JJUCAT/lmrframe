@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/version.h
+
+/home/lmr/MyGit/lmrframe/main.cpp
+iostream
+-
+version.h
+/home/lmr/MyGit/lmrframe/version.h
+
