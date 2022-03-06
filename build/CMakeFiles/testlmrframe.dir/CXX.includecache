@@ -6,3 +6,27 @@
 
 #IncludeRegexTransform: 
 
+../inc/lmrinc.h
+lmrtypes.h
+../inc/lmrtypes.h
+obj.h
+../inc/obj.h
+cstdio
+-
+
+../inc/lmrtypes.h
+string
+-
+
+../inc/logger.h
+lmrinc.h
+../inc/lmrinc.h
+
+../inc/obj.h
+lmrtypes.h
+../inc/lmrtypes.h
+
+/home/lmr/MyGit/lmrframe/src/logger.cpp
+logger.h
+/home/lmr/MyGit/lmrframe/src/logger.h
+

@@ -1,7 +1,7 @@
 #ifndef __CLOCK_H__
 #define __CLOCK_H__
 
-#include "baseinc.h"
+#include "lmrinc.h"
 
 #if 0
 namespace lmr {

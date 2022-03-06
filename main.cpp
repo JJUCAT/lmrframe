@@ -1,5 +1,8 @@
-#include <iostream>
+#include "lmrinc.h"
 #include "version.h"
+
+
+#include <iostream>
 
 
 int main(int argc, char** argv)

@@ -1,16 +1,12 @@
-#include "baseinc.h"
-#include "obj.h"
-
-#include <iostream>
+#include "test.h"
 
 using namespace std;
 using namespace lmr;
 
 int main(int argc, char** argv)
 {
-    cout << __FILE__ << " test start." << endl;
+    LOG_S("test main start.\n");
 
-    Obj* obj1 = new Obj("yamoto");
-    cout << "obj1 name: " << obj1->GetName() << endl;
+    LOG_S("test main end.\n");
 }
 

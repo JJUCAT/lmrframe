@@ -1,7 +1,7 @@
 #ifndef __LOGGER_H__
 #define __LOGGER_H__
 
-#include "baseinc.h"
+#include "lmrinc.h"
 
 namespace lmr {
 

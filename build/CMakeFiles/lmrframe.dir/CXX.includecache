@@ -6,11 +6,29 @@
 
 #IncludeRegexTransform: 
 
+../inc/lmrinc.h
+lmrtypes.h
+../inc/lmrtypes.h
+obj.h
+../inc/obj.h
+cstdio
+-
+
+../inc/lmrtypes.h
+string
+-
+
+../inc/obj.h
+lmrtypes.h
+../inc/lmrtypes.h
+
 ../inc/version.h
 
 /home/lmr/MyGit/lmrframe/main.cpp
-iostream
--
+lmrinc.h
+/home/lmr/MyGit/lmrframe/lmrinc.h
 version.h
 /home/lmr/MyGit/lmrframe/version.h
+iostream
+-
 
