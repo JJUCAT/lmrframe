@@ -11,6 +11,9 @@ set(VERSION_PATCH 0)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+#set flag
+set(CMAKE_CXX_FLAGS -pthread)
+
 #cmake log
 set(PROJ_NAME lmrframe)
 message(STATUS "building: " ${PROJ_NAME})
@@ -20,7 +23,8 @@ set(ROOT_DIR ${CMAKE_SOURCE_DIR})
 
 
 set(INC ${ROOT_DIR}/inc)
-set(INC_LIST ${INC})
+set(TEST_INC ${ROOT_DIR}/test)
+set(INC_LIST ${INC} ${TEST_INC})
 #set include directories
 include_directories(${INC_LIST})
 

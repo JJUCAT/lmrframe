@@ -5,16 +5,41 @@ CMakeFiles/testlmrframe.dir/src/clock.cpp.o
  ../inc/clock.h
  ../inc/lmrinc.h
  ../inc/lmrtypes.h
+ ../inc/mutex.h
  ../inc/obj.h
  /home/lmr/MyGit/lmrframe/src/clock.cpp
 CMakeFiles/testlmrframe.dir/src/logger.cpp.o
+ ../inc/clock.h
  ../inc/lmrinc.h
  ../inc/lmrtypes.h
  ../inc/logger.h
+ ../inc/mutex.h
  ../inc/obj.h
  /home/lmr/MyGit/lmrframe/src/logger.cpp
+CMakeFiles/testlmrframe.dir/src/mutex.cpp.o
+ ../inc/clock.h
+ ../inc/lmrinc.h
+ ../inc/lmrtypes.h
+ ../inc/mutex.h
+ ../inc/obj.h
+ /home/lmr/MyGit/lmrframe/src/mutex.cpp
 CMakeFiles/testlmrframe.dir/src/obj.cpp.o
  ../inc/lmrtypes.h
  ../inc/obj.h
  /home/lmr/MyGit/lmrframe/src/obj.cpp
 CMakeFiles/testlmrframe.dir/test/main.cpp.o
+ ../inc/clock.h
+ ../inc/lmrinc.h
+ ../inc/lmrtypes.h
+ ../inc/mutex.h
+ ../inc/obj.h
+ /home/lmr/MyGit/lmrframe/test/main.cpp
+ /home/lmr/MyGit/lmrframe/test/test.h
+CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o
+ ../inc/clock.h
+ ../inc/lmrinc.h
+ ../inc/lmrtypes.h
+ ../inc/mutex.h
+ ../inc/obj.h
+ /home/lmr/MyGit/lmrframe/test/test.h
+ /home/lmr/MyGit/lmrframe/test/test_clock.cpp

@@ -223,6 +223,36 @@ src/logger.cpp.s:
 	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/src/logger.cpp.s
 .PHONY : src/logger.cpp.s
 
+src/mutex.o: src/mutex.cpp.o
+
+.PHONY : src/mutex.o
+
+# target to build an object file
+src/mutex.cpp.o:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/src/mutex.cpp.o
+	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/src/mutex.cpp.o
+.PHONY : src/mutex.cpp.o
+
+src/mutex.i: src/mutex.cpp.i
+
+.PHONY : src/mutex.i
+
+# target to preprocess a source file
+src/mutex.cpp.i:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/src/mutex.cpp.i
+	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/src/mutex.cpp.i
+.PHONY : src/mutex.cpp.i
+
+src/mutex.s: src/mutex.cpp.s
+
+.PHONY : src/mutex.s
+
+# target to generate assembly for a file
+src/mutex.cpp.s:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/src/mutex.cpp.s
+	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/src/mutex.cpp.s
+.PHONY : src/mutex.cpp.s
+
 src/obj.o: src/obj.cpp.o
 
 .PHONY : src/obj.o
@@ -280,6 +310,33 @@ test/main.cpp.s:
 	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/main.cpp.s
 .PHONY : test/main.cpp.s
 
+test/test_clock.o: test/test_clock.cpp.o
+
+.PHONY : test/test_clock.o
+
+# target to build an object file
+test/test_clock.cpp.o:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o
+.PHONY : test/test_clock.cpp.o
+
+test/test_clock.i: test/test_clock.cpp.i
+
+.PHONY : test/test_clock.i
+
+# target to preprocess a source file
+test/test_clock.cpp.i:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/test_clock.cpp.i
+.PHONY : test/test_clock.cpp.i
+
+test/test_clock.s: test/test_clock.cpp.s
+
+.PHONY : test/test_clock.s
+
+# target to generate assembly for a file
+test/test_clock.cpp.s:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/test_clock.cpp.s
+.PHONY : test/test_clock.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -299,12 +356,18 @@ help:
 	@echo "... src/logger.o"
 	@echo "... src/logger.i"
 	@echo "... src/logger.s"
+	@echo "... src/mutex.o"
+	@echo "... src/mutex.i"
+	@echo "... src/mutex.s"
 	@echo "... src/obj.o"
 	@echo "... src/obj.i"
 	@echo "... src/obj.s"
 	@echo "... test/main.o"
 	@echo "... test/main.i"
 	@echo "... test/main.s"
+	@echo "... test/test_clock.o"
+	@echo "... test/test_clock.i"
+	@echo "... test/test_clock.s"
 .PHONY : help
 
 

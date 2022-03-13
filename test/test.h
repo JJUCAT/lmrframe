@@ -3,5 +3,11 @@
 
 #include "lmrinc.h"
 
+namespace lmr {
+//clock
+Void test_clock();
+
+} // namespace lmr
+
 
 #endif // __TEST_H__

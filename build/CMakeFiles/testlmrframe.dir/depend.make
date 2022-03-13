@@ -4,17 +4,42 @@
 CMakeFiles/testlmrframe.dir/src/clock.cpp.o: ../inc/clock.h
 CMakeFiles/testlmrframe.dir/src/clock.cpp.o: ../inc/lmrinc.h
 CMakeFiles/testlmrframe.dir/src/clock.cpp.o: ../inc/lmrtypes.h
+CMakeFiles/testlmrframe.dir/src/clock.cpp.o: ../inc/mutex.h
 CMakeFiles/testlmrframe.dir/src/clock.cpp.o: ../inc/obj.h
 CMakeFiles/testlmrframe.dir/src/clock.cpp.o: ../src/clock.cpp
 
+CMakeFiles/testlmrframe.dir/src/logger.cpp.o: ../inc/clock.h
 CMakeFiles/testlmrframe.dir/src/logger.cpp.o: ../inc/lmrinc.h
 CMakeFiles/testlmrframe.dir/src/logger.cpp.o: ../inc/lmrtypes.h
 CMakeFiles/testlmrframe.dir/src/logger.cpp.o: ../inc/logger.h
+CMakeFiles/testlmrframe.dir/src/logger.cpp.o: ../inc/mutex.h
 CMakeFiles/testlmrframe.dir/src/logger.cpp.o: ../inc/obj.h
 CMakeFiles/testlmrframe.dir/src/logger.cpp.o: ../src/logger.cpp
+
+CMakeFiles/testlmrframe.dir/src/mutex.cpp.o: ../inc/clock.h
+CMakeFiles/testlmrframe.dir/src/mutex.cpp.o: ../inc/lmrinc.h
+CMakeFiles/testlmrframe.dir/src/mutex.cpp.o: ../inc/lmrtypes.h
+CMakeFiles/testlmrframe.dir/src/mutex.cpp.o: ../inc/mutex.h
+CMakeFiles/testlmrframe.dir/src/mutex.cpp.o: ../inc/obj.h
+CMakeFiles/testlmrframe.dir/src/mutex.cpp.o: ../src/mutex.cpp
 
 CMakeFiles/testlmrframe.dir/src/obj.cpp.o: ../inc/lmrtypes.h
 CMakeFiles/testlmrframe.dir/src/obj.cpp.o: ../inc/obj.h
 CMakeFiles/testlmrframe.dir/src/obj.cpp.o: ../src/obj.cpp
 
+CMakeFiles/testlmrframe.dir/test/main.cpp.o: ../inc/clock.h
+CMakeFiles/testlmrframe.dir/test/main.cpp.o: ../inc/lmrinc.h
+CMakeFiles/testlmrframe.dir/test/main.cpp.o: ../inc/lmrtypes.h
+CMakeFiles/testlmrframe.dir/test/main.cpp.o: ../inc/mutex.h
+CMakeFiles/testlmrframe.dir/test/main.cpp.o: ../inc/obj.h
+CMakeFiles/testlmrframe.dir/test/main.cpp.o: ../test/main.cpp
+CMakeFiles/testlmrframe.dir/test/main.cpp.o: ../test/test.h
+
+CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o: ../inc/clock.h
+CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o: ../inc/lmrinc.h
+CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o: ../inc/lmrtypes.h
+CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o: ../inc/mutex.h
+CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o: ../inc/obj.h
+CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o: ../test/test.h
+CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o: ../test/test_clock.cpp
 

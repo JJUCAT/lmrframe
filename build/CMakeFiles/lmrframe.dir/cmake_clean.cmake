@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lmrframe.dir/main.cpp.o"
   "CMakeFiles/lmrframe.dir/src/clock.cpp.o"
   "CMakeFiles/lmrframe.dir/src/logger.cpp.o"
+  "CMakeFiles/lmrframe.dir/src/mutex.cpp.o"
   "CMakeFiles/lmrframe.dir/src/obj.cpp.o"
   "lmrframe"
   "lmrframe.pdb"

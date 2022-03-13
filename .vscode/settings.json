@@ -3,6 +3,7 @@
         "*.in": "cpp",
         "typeinfo": "cpp",
         "iostream": "cpp",
-        "cstdio": "cpp"
+        "cstdio": "cpp",
+        "functional": "cpp"
     }
 }

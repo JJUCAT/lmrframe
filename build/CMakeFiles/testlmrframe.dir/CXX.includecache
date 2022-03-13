@@ -6,19 +6,31 @@
 
 #IncludeRegexTransform: 
 
+../inc/clock.h
+lmrinc.h
+../inc/lmrinc.h
+time.h
+-
+
 ../inc/lmrinc.h
 lmrtypes.h
 ../inc/lmrtypes.h
 obj.h
 ../inc/obj.h
+clock.h
+../inc/clock.h
+mutex.h
+../inc/mutex.h
 cstdio
 -
+unistd.h
+../inc/unistd.h
 
 ../inc/lmrtypes.h
 string
 -
 
-../inc/logger.h
+../inc/mutex.h
 lmrinc.h
 ../inc/lmrinc.h
 
@@ -26,7 +38,15 @@ lmrinc.h
 lmrtypes.h
 ../inc/lmrtypes.h
 
-/home/lmr/MyGit/lmrframe/src/logger.cpp
-logger.h
-/home/lmr/MyGit/lmrframe/src/logger.h
+/home/lmr/MyGit/lmrframe/test/test.h
+lmrinc.h
+/home/lmr/MyGit/lmrframe/test/lmrinc.h
+
+/home/lmr/MyGit/lmrframe/test/test_clock.cpp
+lmrinc.h
+/home/lmr/MyGit/lmrframe/test/lmrinc.h
+clock.h
+/home/lmr/MyGit/lmrframe/test/clock.h
+test.h
+/home/lmr/MyGit/lmrframe/test/test.h
 

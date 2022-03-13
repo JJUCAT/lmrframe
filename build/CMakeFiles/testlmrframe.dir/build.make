@@ -70,9 +70,22 @@ CMakeFiles/testlmrframe.dir/test/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testlmrframe.dir/test/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lmr/MyGit/lmrframe/test/main.cpp -o CMakeFiles/testlmrframe.dir/test/main.cpp.s
 
+CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o: CMakeFiles/testlmrframe.dir/flags.make
+CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o: ../test/test_clock.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o -c /home/lmr/MyGit/lmrframe/test/test_clock.cpp
+
+CMakeFiles/testlmrframe.dir/test/test_clock.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testlmrframe.dir/test/test_clock.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lmr/MyGit/lmrframe/test/test_clock.cpp > CMakeFiles/testlmrframe.dir/test/test_clock.cpp.i
+
+CMakeFiles/testlmrframe.dir/test/test_clock.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testlmrframe.dir/test/test_clock.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lmr/MyGit/lmrframe/test/test_clock.cpp -o CMakeFiles/testlmrframe.dir/test/test_clock.cpp.s
+
 CMakeFiles/testlmrframe.dir/src/clock.cpp.o: CMakeFiles/testlmrframe.dir/flags.make
 CMakeFiles/testlmrframe.dir/src/clock.cpp.o: ../src/clock.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testlmrframe.dir/src/clock.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testlmrframe.dir/src/clock.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testlmrframe.dir/src/clock.cpp.o -c /home/lmr/MyGit/lmrframe/src/clock.cpp
 
 CMakeFiles/testlmrframe.dir/src/clock.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/testlmrframe.dir/src/clock.cpp.s: cmake_force
 
 CMakeFiles/testlmrframe.dir/src/logger.cpp.o: CMakeFiles/testlmrframe.dir/flags.make
 CMakeFiles/testlmrframe.dir/src/logger.cpp.o: ../src/logger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testlmrframe.dir/src/logger.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/testlmrframe.dir/src/logger.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testlmrframe.dir/src/logger.cpp.o -c /home/lmr/MyGit/lmrframe/src/logger.cpp
 
 CMakeFiles/testlmrframe.dir/src/logger.cpp.i: cmake_force
@@ -96,9 +109,22 @@ CMakeFiles/testlmrframe.dir/src/logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testlmrframe.dir/src/logger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lmr/MyGit/lmrframe/src/logger.cpp -o CMakeFiles/testlmrframe.dir/src/logger.cpp.s
 
+CMakeFiles/testlmrframe.dir/src/mutex.cpp.o: CMakeFiles/testlmrframe.dir/flags.make
+CMakeFiles/testlmrframe.dir/src/mutex.cpp.o: ../src/mutex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/testlmrframe.dir/src/mutex.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testlmrframe.dir/src/mutex.cpp.o -c /home/lmr/MyGit/lmrframe/src/mutex.cpp
+
+CMakeFiles/testlmrframe.dir/src/mutex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testlmrframe.dir/src/mutex.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lmr/MyGit/lmrframe/src/mutex.cpp > CMakeFiles/testlmrframe.dir/src/mutex.cpp.i
+
+CMakeFiles/testlmrframe.dir/src/mutex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testlmrframe.dir/src/mutex.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lmr/MyGit/lmrframe/src/mutex.cpp -o CMakeFiles/testlmrframe.dir/src/mutex.cpp.s
+
 CMakeFiles/testlmrframe.dir/src/obj.cpp.o: CMakeFiles/testlmrframe.dir/flags.make
 CMakeFiles/testlmrframe.dir/src/obj.cpp.o: ../src/obj.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/testlmrframe.dir/src/obj.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/testlmrframe.dir/src/obj.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/testlmrframe.dir/src/obj.cpp.o -c /home/lmr/MyGit/lmrframe/src/obj.cpp
 
 CMakeFiles/testlmrframe.dir/src/obj.cpp.i: cmake_force
@@ -112,20 +138,24 @@ CMakeFiles/testlmrframe.dir/src/obj.cpp.s: cmake_force
 # Object files for target testlmrframe
 testlmrframe_OBJECTS = \
 "CMakeFiles/testlmrframe.dir/test/main.cpp.o" \
+"CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o" \
 "CMakeFiles/testlmrframe.dir/src/clock.cpp.o" \
 "CMakeFiles/testlmrframe.dir/src/logger.cpp.o" \
+"CMakeFiles/testlmrframe.dir/src/mutex.cpp.o" \
 "CMakeFiles/testlmrframe.dir/src/obj.cpp.o"
 
 # External object files for target testlmrframe
 testlmrframe_EXTERNAL_OBJECTS =
 
 testlmrframe: CMakeFiles/testlmrframe.dir/test/main.cpp.o
+testlmrframe: CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o
 testlmrframe: CMakeFiles/testlmrframe.dir/src/clock.cpp.o
 testlmrframe: CMakeFiles/testlmrframe.dir/src/logger.cpp.o
+testlmrframe: CMakeFiles/testlmrframe.dir/src/mutex.cpp.o
 testlmrframe: CMakeFiles/testlmrframe.dir/src/obj.cpp.o
 testlmrframe: CMakeFiles/testlmrframe.dir/build.make
 testlmrframe: CMakeFiles/testlmrframe.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable testlmrframe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable testlmrframe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testlmrframe.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
