@@ -1,13 +1,9 @@
 #ifndef __LMRINC_H__
 #define __LMRINC_H__
 
-#include "lmrtypes.h"
-#include "obj.h"
-#include "clock.h"
-#include "mutex.h"
-
 
 #include <cstdio>
+#include <map>
 #include "unistd.h"
 
 #define ENABLE_DEBUG
@@ -20,6 +16,19 @@
 
 #define DEBUG_W(format, ...) printf("\033[33m[SE]" #format "\n", ##__VA_ARGS__)
 #define DEBUG_E(format, ...) printf("\033[31m[SE]" #format "\n", ##__VA_ARGS__)
+
+
+
+
+
+#include "lmrtypes.h"
+#include "obj.h"
+#include "clock.h"
+#include "mutex.h"
+
+#include "pool.hpp"
+
+
 
 
 #endif // __LMRINC_H__
