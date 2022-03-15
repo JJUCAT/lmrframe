@@ -4,8 +4,12 @@
 #include "lmrinc.h"
 
 namespace lmr {
-//clock
-Void test_clock();
+
+S32 test_pool();
+S32 test_clock();
+
+
+
 
 } // namespace lmr
 

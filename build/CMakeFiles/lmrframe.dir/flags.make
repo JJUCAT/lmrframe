@@ -6,5 +6,5 @@ CXX_FLAGS = -pthread   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lmr/MyGit/lmrframe/inc -I/home/lmr/MyGit/lmrframe/test -I/home/lmr/MyGit/lmrframe/build 
+CXX_INCLUDES = -I/home/lmr/MyGit/lmrframe/inc -I/home/lmr/MyGit/lmrframe/test/inc -I/home/lmr/MyGit/lmrframe/build 
 

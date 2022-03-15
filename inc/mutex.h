@@ -24,18 +24,18 @@ private:
 class AutoMutex
 {
 public:
-    explicit AutoMutex(Mutex& mtx) : auto_mutex_(mtx)
+    explicit AutoMutex(Mutex* mtx) : auto_mutex_(mtx)
     {
-        auto_mutex_.Lock();
+        auto_mutex_->Lock();
     }
 
     virtual ~AutoMutex()
     {
-        auto_mutex_.Unlock();
+        auto_mutex_->Unlock();
     }
 
 private:
-    Mutex& auto_mutex_;
+    Mutex* auto_mutex_;
 }; // Class AutoMutex 
 
 

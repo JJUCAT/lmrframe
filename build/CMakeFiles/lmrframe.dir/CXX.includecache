@@ -13,6 +13,10 @@ time.h
 -
 
 ../inc/lmrinc.h
+cstdio
+-
+unistd.h
+../inc/unistd.h
 lmrtypes.h
 ../inc/lmrtypes.h
 obj.h
@@ -21,10 +25,6 @@ clock.h
 ../inc/clock.h
 mutex.h
 ../inc/mutex.h
-cstdio
--
-unistd.h
-../inc/unistd.h
 
 ../inc/lmrtypes.h
 string

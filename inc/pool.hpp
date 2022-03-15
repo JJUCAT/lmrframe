@@ -2,6 +2,8 @@
 #define __POOL_HPP_
 
 #include "lmrinc.h"
+#include <map>
+
 
 namespace lmr {
 
@@ -46,9 +48,9 @@ public:
             free_[tmp] = Clock::GetTime(TimeSec);
         }
     }
-    
+
 private:
-    std::map<T* S32> free_, busy_;
+    std::map<T*, Time_t> free_, busy_;
     Mutex* mutex_;
 
     virtual T* New()

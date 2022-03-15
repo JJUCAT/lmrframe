@@ -283,59 +283,86 @@ src/obj.cpp.s:
 	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/src/obj.cpp.s
 .PHONY : src/obj.cpp.s
 
-test/main.o: test/main.cpp.o
+test/src/main.o: test/src/main.cpp.o
 
-.PHONY : test/main.o
-
-# target to build an object file
-test/main.cpp.o:
-	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/main.cpp.o
-.PHONY : test/main.cpp.o
-
-test/main.i: test/main.cpp.i
-
-.PHONY : test/main.i
-
-# target to preprocess a source file
-test/main.cpp.i:
-	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/main.cpp.i
-.PHONY : test/main.cpp.i
-
-test/main.s: test/main.cpp.s
-
-.PHONY : test/main.s
-
-# target to generate assembly for a file
-test/main.cpp.s:
-	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/main.cpp.s
-.PHONY : test/main.cpp.s
-
-test/test_clock.o: test/test_clock.cpp.o
-
-.PHONY : test/test_clock.o
+.PHONY : test/src/main.o
 
 # target to build an object file
-test/test_clock.cpp.o:
-	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/test_clock.cpp.o
-.PHONY : test/test_clock.cpp.o
+test/src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/main.cpp.o
+.PHONY : test/src/main.cpp.o
 
-test/test_clock.i: test/test_clock.cpp.i
+test/src/main.i: test/src/main.cpp.i
 
-.PHONY : test/test_clock.i
+.PHONY : test/src/main.i
 
 # target to preprocess a source file
-test/test_clock.cpp.i:
-	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/test_clock.cpp.i
-.PHONY : test/test_clock.cpp.i
+test/src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/main.cpp.i
+.PHONY : test/src/main.cpp.i
 
-test/test_clock.s: test/test_clock.cpp.s
+test/src/main.s: test/src/main.cpp.s
 
-.PHONY : test/test_clock.s
+.PHONY : test/src/main.s
 
 # target to generate assembly for a file
-test/test_clock.cpp.s:
-	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/test_clock.cpp.s
-.PHONY : test/test_clock.cpp.s
+test/src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/main.cpp.s
+.PHONY : test/src/main.cpp.s
+
+test/src/test_clock.o: test/src/test_clock.cpp.o
+
+.PHONY : test/src/test_clock.o
+
+# target to build an object file
+test/src/test_clock.cpp.o:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/test_clock.cpp.o
+.PHONY : test/src/test_clock.cpp.o
+
+test/src/test_clock.i: test/src/test_clock.cpp.i
+
+.PHONY : test/src/test_clock.i
+
+# target to preprocess a source file
+test/src/test_clock.cpp.i:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/test_clock.cpp.i
+.PHONY : test/src/test_clock.cpp.i
+
+test/src/test_clock.s: test/src/test_clock.cpp.s
+
+.PHONY : test/src/test_clock.s
+
+# target to generate assembly for a file
+test/src/test_clock.cpp.s:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/test_clock.cpp.s
+.PHONY : test/src/test_clock.cpp.s
+
+test/src/test_pool.o: test/src/test_pool.cpp.o
+
+.PHONY : test/src/test_pool.o
+
+# target to build an object file
+test/src/test_pool.cpp.o:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/test_pool.cpp.o
+.PHONY : test/src/test_pool.cpp.o
+
+test/src/test_pool.i: test/src/test_pool.cpp.i
+
+.PHONY : test/src/test_pool.i
+
+# target to preprocess a source file
+test/src/test_pool.cpp.i:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/test_pool.cpp.i
+.PHONY : test/src/test_pool.cpp.i
+
+test/src/test_pool.s: test/src/test_pool.cpp.s
+
+.PHONY : test/src/test_pool.s
+
+# target to generate assembly for a file
+test/src/test_pool.cpp.s:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/test_pool.cpp.s
+.PHONY : test/src/test_pool.cpp.s
 
 # Help Target
 help:
@@ -362,12 +389,15 @@ help:
 	@echo "... src/obj.o"
 	@echo "... src/obj.i"
 	@echo "... src/obj.s"
-	@echo "... test/main.o"
-	@echo "... test/main.i"
-	@echo "... test/main.s"
-	@echo "... test/test_clock.o"
-	@echo "... test/test_clock.i"
-	@echo "... test/test_clock.s"
+	@echo "... test/src/main.o"
+	@echo "... test/src/main.i"
+	@echo "... test/src/main.s"
+	@echo "... test/src/test_clock.o"
+	@echo "... test/src/test_clock.i"
+	@echo "... test/src/test_clock.s"
+	@echo "... test/src/test_pool.o"
+	@echo "... test/src/test_pool.i"
+	@echo "... test/src/test_pool.s"
 .PHONY : help
 
 
