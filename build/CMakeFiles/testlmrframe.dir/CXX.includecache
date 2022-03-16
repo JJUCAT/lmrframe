@@ -38,23 +38,9 @@ lmrinc.h
 lmrtypes.h
 ../inc/lmrtypes.h
 
-../inc/pool.hpp
-lmrinc.h
-../inc/lmrinc.h
-map
--
-
-../test/inc/test.h
-lmrinc.h
-../test/inc/lmrinc.h
-
-/home/lmr/MyGit/lmrframe/test/src/main.cpp
-test.h
-/home/lmr/MyGit/lmrframe/test/src/test.h
-
-/home/lmr/MyGit/lmrframe/test/src/test_pool.cpp
+/home/lmr/MyGit/lmrframe/test/src/test_clock.cpp
 lmrinc.h
 /home/lmr/MyGit/lmrframe/test/src/lmrinc.h
-pool.hpp
-/home/lmr/MyGit/lmrframe/test/src/pool.hpp
+clock.h
+/home/lmr/MyGit/lmrframe/test/src/clock.h
 

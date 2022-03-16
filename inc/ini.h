@@ -6,23 +6,28 @@
 
 #include <map>
 
+
 namespace lmr {
 
 class Ini : public Obj
 {
 public:
-    Ini();
+    Ini(String pathname, String objname = "ini");
     ~Ini();
 
-    S32 Create(const String& pathname);
-    S32 Init(const String& pathname);
     S32 Save(const String& pathname);
     String Read(const String& segment, const String& key);
     S32 Write(const String& segment, const String& key, const String& value);
 
 private:
-    Mutex* mtx_;
-    std::map<String, String>* skv_;
+    S32 Parse();
+
+
+
+
+    const String pathname_;
+    Mutex mtx_;
+    std::map<String, String> skv_;
 };
 
 } // namespace lmr
