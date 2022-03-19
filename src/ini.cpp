@@ -61,24 +61,23 @@ S32 Ini::Parse()
         {
             smatch m;
             regex r("\\w+");
-            S32 n = regex_match(line, m, r);
 
-            for (auto iter : m)
+            if (regex_match(line.cbegin(), line.cend(), m, r))
             {
-                DEBUG_D("regex find:%s", iter);
-            }
-
-            if (n == 2)
-            {
-                String key = *m.begin();
+                String key = *(m.begin());
                 String value = *(m.end() - 1);
                 skv_[(segment+key).c_str()] = value.c_str();
             }
         }
 
-        if ((line.find('[') == 0) && (line.rfind(']') == (line.size() - 1)))
+        String emm("yamoto yia");
+        String pattern = "\\w+";//\\w+(?=\\])
+        regex r("pattern, regex::icase");
+        smatch m;
+        if (regex_match(emm, m, r))
         {
-            segment = line.substr(1, line.size() - 2);
+            DEBUG_D("find segment");
+            segment = *(m.begin());
             segment += ":";
             snum ++;
             DEBUG_D("find segment[%d]:%s", snum, segment.c_str());
