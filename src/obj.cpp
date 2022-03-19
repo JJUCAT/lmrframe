@@ -16,7 +16,7 @@ Obj::Obj(const String& name):name_(name)
 
 Obj::~Obj()
 {
-    printf("Obj destruct\n");
+    printf("Obj:%s destruct\n", name_.c_str());
 }
 
 String Obj::GetName()

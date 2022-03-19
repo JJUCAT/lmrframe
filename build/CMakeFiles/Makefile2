@@ -76,12 +76,12 @@ clean: CMakeFiles/lmrframe.dir/clean
 CMakeFiles/testlmrframe.dir/all:
 	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/depend
 	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14 "Built target testlmrframe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17 "Built target testlmrframe"
 .PHONY : CMakeFiles/testlmrframe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testlmrframe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmr/MyGit/lmrframe/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmr/MyGit/lmrframe/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testlmrframe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmr/MyGit/lmrframe/build/CMakeFiles 0
 .PHONY : CMakeFiles/testlmrframe.dir/rule
@@ -103,12 +103,12 @@ CMakeFiles/testlmrframe.dir/clean:
 CMakeFiles/lmrframe.dir/all:
 	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/depend
 	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target lmrframe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target lmrframe"
 .PHONY : CMakeFiles/lmrframe.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lmrframe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmr/MyGit/lmrframe/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmr/MyGit/lmrframe/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lmrframe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmr/MyGit/lmrframe/build/CMakeFiles 0
 .PHONY : CMakeFiles/lmrframe.dir/rule

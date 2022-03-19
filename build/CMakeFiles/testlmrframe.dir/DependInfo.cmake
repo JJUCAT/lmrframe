@@ -5,11 +5,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lmr/MyGit/lmrframe/src/clock.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/testlmrframe.dir/src/clock.cpp.o"
+  "/home/lmr/MyGit/lmrframe/src/ini.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/testlmrframe.dir/src/ini.cpp.o"
   "/home/lmr/MyGit/lmrframe/src/logger.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/testlmrframe.dir/src/logger.cpp.o"
   "/home/lmr/MyGit/lmrframe/src/mutex.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/testlmrframe.dir/src/mutex.cpp.o"
   "/home/lmr/MyGit/lmrframe/src/obj.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/testlmrframe.dir/src/obj.cpp.o"
   "/home/lmr/MyGit/lmrframe/test/src/main.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/testlmrframe.dir/test/src/main.cpp.o"
   "/home/lmr/MyGit/lmrframe/test/src/test_clock.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/testlmrframe.dir/test/src/test_clock.cpp.o"
+  "/home/lmr/MyGit/lmrframe/test/src/test_ini.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/testlmrframe.dir/test/src/test_ini.cpp.o"
   "/home/lmr/MyGit/lmrframe/test/src/test_pool.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/testlmrframe.dir/test/src/test_pool.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

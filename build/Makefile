@@ -193,6 +193,36 @@ src/clock.cpp.s:
 	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/src/clock.cpp.s
 .PHONY : src/clock.cpp.s
 
+src/ini.o: src/ini.cpp.o
+
+.PHONY : src/ini.o
+
+# target to build an object file
+src/ini.cpp.o:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/src/ini.cpp.o
+	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/src/ini.cpp.o
+.PHONY : src/ini.cpp.o
+
+src/ini.i: src/ini.cpp.i
+
+.PHONY : src/ini.i
+
+# target to preprocess a source file
+src/ini.cpp.i:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/src/ini.cpp.i
+	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/src/ini.cpp.i
+.PHONY : src/ini.cpp.i
+
+src/ini.s: src/ini.cpp.s
+
+.PHONY : src/ini.s
+
+# target to generate assembly for a file
+src/ini.cpp.s:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/src/ini.cpp.s
+	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/src/ini.cpp.s
+.PHONY : src/ini.cpp.s
+
 src/logger.o: src/logger.cpp.o
 
 .PHONY : src/logger.o
@@ -337,6 +367,33 @@ test/src/test_clock.cpp.s:
 	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/test_clock.cpp.s
 .PHONY : test/src/test_clock.cpp.s
 
+test/src/test_ini.o: test/src/test_ini.cpp.o
+
+.PHONY : test/src/test_ini.o
+
+# target to build an object file
+test/src/test_ini.cpp.o:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/test_ini.cpp.o
+.PHONY : test/src/test_ini.cpp.o
+
+test/src/test_ini.i: test/src/test_ini.cpp.i
+
+.PHONY : test/src/test_ini.i
+
+# target to preprocess a source file
+test/src/test_ini.cpp.i:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/test_ini.cpp.i
+.PHONY : test/src/test_ini.cpp.i
+
+test/src/test_ini.s: test/src/test_ini.cpp.s
+
+.PHONY : test/src/test_ini.s
+
+# target to generate assembly for a file
+test/src/test_ini.cpp.s:
+	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/test/src/test_ini.cpp.s
+.PHONY : test/src/test_ini.cpp.s
+
 test/src/test_pool.o: test/src/test_pool.cpp.o
 
 .PHONY : test/src/test_pool.o
@@ -380,6 +437,9 @@ help:
 	@echo "... src/clock.o"
 	@echo "... src/clock.i"
 	@echo "... src/clock.s"
+	@echo "... src/ini.o"
+	@echo "... src/ini.i"
+	@echo "... src/ini.s"
 	@echo "... src/logger.o"
 	@echo "... src/logger.i"
 	@echo "... src/logger.s"
@@ -395,6 +455,9 @@ help:
 	@echo "... test/src/test_clock.o"
 	@echo "... test/src/test_clock.i"
 	@echo "... test/src/test_clock.s"
+	@echo "... test/src/test_ini.o"
+	@echo "... test/src/test_ini.i"
+	@echo "... test/src/test_ini.s"
 	@echo "... test/src/test_pool.o"
 	@echo "... test/src/test_pool.i"
 	@echo "... test/src/test_pool.s"

@@ -8,6 +8,14 @@ CMakeFiles/testlmrframe.dir/src/clock.cpp.o: ../inc/mutex.h
 CMakeFiles/testlmrframe.dir/src/clock.cpp.o: ../inc/obj.h
 CMakeFiles/testlmrframe.dir/src/clock.cpp.o: ../src/clock.cpp
 
+CMakeFiles/testlmrframe.dir/src/ini.cpp.o: ../inc/clock.h
+CMakeFiles/testlmrframe.dir/src/ini.cpp.o: ../inc/ini.h
+CMakeFiles/testlmrframe.dir/src/ini.cpp.o: ../inc/lmrinc.h
+CMakeFiles/testlmrframe.dir/src/ini.cpp.o: ../inc/lmrtypes.h
+CMakeFiles/testlmrframe.dir/src/ini.cpp.o: ../inc/mutex.h
+CMakeFiles/testlmrframe.dir/src/ini.cpp.o: ../inc/obj.h
+CMakeFiles/testlmrframe.dir/src/ini.cpp.o: ../src/ini.cpp
+
 CMakeFiles/testlmrframe.dir/src/logger.cpp.o: ../inc/clock.h
 CMakeFiles/testlmrframe.dir/src/logger.cpp.o: ../inc/lmrinc.h
 CMakeFiles/testlmrframe.dir/src/logger.cpp.o: ../inc/lmrtypes.h
@@ -41,6 +49,14 @@ CMakeFiles/testlmrframe.dir/test/src/test_clock.cpp.o: ../inc/lmrtypes.h
 CMakeFiles/testlmrframe.dir/test/src/test_clock.cpp.o: ../inc/mutex.h
 CMakeFiles/testlmrframe.dir/test/src/test_clock.cpp.o: ../inc/obj.h
 CMakeFiles/testlmrframe.dir/test/src/test_clock.cpp.o: ../test/src/test_clock.cpp
+
+CMakeFiles/testlmrframe.dir/test/src/test_ini.cpp.o: ../inc/clock.h
+CMakeFiles/testlmrframe.dir/test/src/test_ini.cpp.o: ../inc/ini.h
+CMakeFiles/testlmrframe.dir/test/src/test_ini.cpp.o: ../inc/lmrinc.h
+CMakeFiles/testlmrframe.dir/test/src/test_ini.cpp.o: ../inc/lmrtypes.h
+CMakeFiles/testlmrframe.dir/test/src/test_ini.cpp.o: ../inc/mutex.h
+CMakeFiles/testlmrframe.dir/test/src/test_ini.cpp.o: ../inc/obj.h
+CMakeFiles/testlmrframe.dir/test/src/test_ini.cpp.o: ../test/src/test_ini.cpp
 
 CMakeFiles/testlmrframe.dir/test/src/test_pool.cpp.o: ../inc/clock.h
 CMakeFiles/testlmrframe.dir/test/src/test_pool.cpp.o: ../inc/lmrinc.h

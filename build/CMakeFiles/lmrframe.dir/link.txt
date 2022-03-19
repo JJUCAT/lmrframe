@@ -1,1 +1,1 @@
-/usr/bin/c++  -pthread   CMakeFiles/lmrframe.dir/src/clock.cpp.o CMakeFiles/lmrframe.dir/src/logger.cpp.o CMakeFiles/lmrframe.dir/src/mutex.cpp.o CMakeFiles/lmrframe.dir/src/obj.cpp.o CMakeFiles/lmrframe.dir/main.cpp.o  -o lmrframe 
+/usr/bin/c++  -pthread   CMakeFiles/lmrframe.dir/src/clock.cpp.o CMakeFiles/lmrframe.dir/src/ini.cpp.o CMakeFiles/lmrframe.dir/src/logger.cpp.o CMakeFiles/lmrframe.dir/src/mutex.cpp.o CMakeFiles/lmrframe.dir/src/obj.cpp.o CMakeFiles/lmrframe.dir/main.cpp.o  -o lmrframe 

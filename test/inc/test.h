@@ -7,7 +7,7 @@ namespace lmr {
 
 S32 test_pool();
 S32 test_clock();
-
+S32 test_ini();
 
 
 

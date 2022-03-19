@@ -12,6 +12,12 @@ lmrinc.h
 time.h
 -
 
+../inc/ini.h
+lmrinc.h
+../inc/lmrinc.h
+map
+-
+
 ../inc/lmrinc.h
 cstdio
 -
@@ -38,9 +44,11 @@ lmrinc.h
 lmrtypes.h
 ../inc/lmrtypes.h
 
-/home/lmr/MyGit/lmrframe/test/src/test_clock.cpp
-lmrinc.h
-/home/lmr/MyGit/lmrframe/test/src/lmrinc.h
-clock.h
-/home/lmr/MyGit/lmrframe/test/src/clock.h
+/home/lmr/MyGit/lmrframe/src/ini.cpp
+ini.h
+/home/lmr/MyGit/lmrframe/src/ini.h
+regex
+-
+fstream
+-
 

@@ -35,7 +35,7 @@ set(SRC_LIST ${SRC})
 
 set(MAIN ${ROOT_DIR}/main.cpp)
 
-set(CMAKE_CFG ${ROOT_DIR}/build)
+set(CMAKE_CFG ${ROOT_DIR}/cmakecfg)
 #export xxx.h.in variable to xxx.h
 configure_file(${CMAKE_CFG}/version.h.in ${INC}/version.h)
 

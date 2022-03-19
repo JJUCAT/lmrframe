@@ -12,6 +12,12 @@ lmrinc.h
 time.h
 -
 
+../inc/ini.h
+lmrinc.h
+../inc/lmrinc.h
+map
+-
+
 ../inc/lmrinc.h
 cstdio
 -
@@ -30,10 +36,6 @@ mutex.h
 string
 -
 
-../inc/logger.h
-lmrinc.h
-../inc/lmrinc.h
-
 ../inc/mutex.h
 lmrinc.h
 ../inc/lmrinc.h
@@ -42,33 +44,11 @@ lmrinc.h
 lmrtypes.h
 ../inc/lmrtypes.h
 
-../inc/version.h
-
-/home/lmr/MyGit/lmrframe/main.cpp
-lmrinc.h
-/home/lmr/MyGit/lmrframe/lmrinc.h
-version.h
-/home/lmr/MyGit/lmrframe/version.h
-iostream
+/home/lmr/MyGit/lmrframe/src/ini.cpp
+ini.h
+/home/lmr/MyGit/lmrframe/src/ini.h
+regex
 -
-
-/home/lmr/MyGit/lmrframe/src/clock.cpp
-clock.h
-/home/lmr/MyGit/lmrframe/src/clock.h
-
-/home/lmr/MyGit/lmrframe/src/logger.cpp
-logger.h
-/home/lmr/MyGit/lmrframe/src/logger.h
-
-/home/lmr/MyGit/lmrframe/src/mutex.cpp
-lmrinc.h
-/home/lmr/MyGit/lmrframe/src/lmrinc.h
-pthread.h
+fstream
 -
-
-/home/lmr/MyGit/lmrframe/src/obj.cpp
-lmrtypes.h
-/home/lmr/MyGit/lmrframe/src/lmrtypes.h
-obj.h
-/home/lmr/MyGit/lmrframe/src/obj.h
 

@@ -16,6 +16,14 @@ CMakeFiles/lmrframe.dir/src/clock.cpp.o: ../inc/mutex.h
 CMakeFiles/lmrframe.dir/src/clock.cpp.o: ../inc/obj.h
 CMakeFiles/lmrframe.dir/src/clock.cpp.o: ../src/clock.cpp
 
+CMakeFiles/lmrframe.dir/src/ini.cpp.o: ../inc/clock.h
+CMakeFiles/lmrframe.dir/src/ini.cpp.o: ../inc/ini.h
+CMakeFiles/lmrframe.dir/src/ini.cpp.o: ../inc/lmrinc.h
+CMakeFiles/lmrframe.dir/src/ini.cpp.o: ../inc/lmrtypes.h
+CMakeFiles/lmrframe.dir/src/ini.cpp.o: ../inc/mutex.h
+CMakeFiles/lmrframe.dir/src/ini.cpp.o: ../inc/obj.h
+CMakeFiles/lmrframe.dir/src/ini.cpp.o: ../src/ini.cpp
+
 CMakeFiles/lmrframe.dir/src/logger.cpp.o: ../inc/clock.h
 CMakeFiles/lmrframe.dir/src/logger.cpp.o: ../inc/lmrinc.h
 CMakeFiles/lmrframe.dir/src/logger.cpp.o: ../inc/lmrtypes.h

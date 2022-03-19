@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/lmr/MyGit/lmrframe/main.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/lmrframe.dir/main.cpp.o"
   "/home/lmr/MyGit/lmrframe/src/clock.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/lmrframe.dir/src/clock.cpp.o"
+  "/home/lmr/MyGit/lmrframe/src/ini.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/lmrframe.dir/src/ini.cpp.o"
   "/home/lmr/MyGit/lmrframe/src/logger.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/lmrframe.dir/src/logger.cpp.o"
   "/home/lmr/MyGit/lmrframe/src/mutex.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/lmrframe.dir/src/mutex.cpp.o"
   "/home/lmr/MyGit/lmrframe/src/obj.cpp" "/home/lmr/MyGit/lmrframe/build/CMakeFiles/lmrframe.dir/src/obj.cpp.o"

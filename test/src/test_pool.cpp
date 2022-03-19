@@ -24,7 +24,7 @@ S32 test_pool()
     ptmp = s32pool.Alloc();
     DEBUG_D("s32pool, ptmp = %d", *ptmp);
 
-    DEBUG_D("test pool start");
+    DEBUG_D("test pool end");
 
     return ret;
 }
