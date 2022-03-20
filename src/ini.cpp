@@ -62,7 +62,7 @@ S32 Ini::Parse()
             smatch m;
             regex r("\\w+");
 
-            if (regex_match(line.cbegin(), line.cend(), m, r))
+            if (regex_search(line.cbegin(), line.cend(), m, r))
             {
                 String key = *(m.begin());
                 String value = *(m.end() - 1);
@@ -70,11 +70,9 @@ S32 Ini::Parse()
             }
         }
 
-        String emm("yamoto yia");
-        String pattern = "\\w+";//\\w+(?=\\])
-        regex r("pattern, regex::icase");
+        regex r("\\w+");
         smatch m;
-        if (regex_match(emm, m, r))
+        if (regex_search(line, m, r))
         {
             DEBUG_D("find segment");
             segment = *(m.begin());
