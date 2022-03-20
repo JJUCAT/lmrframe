@@ -2,6 +2,7 @@
 
 #include <regex>
 #include <fstream>
+#include <iostream>
 
 using namespace std;
 
@@ -56,21 +57,44 @@ S32 Ini::Parse()
         
         line = line.substr(0, line.find(';'));
         DEBUG_D("line without note,[%d]:%s", num, line.c_str());
-
-        if ((snum > 0) && (line.find('=') != string::npos))
+        DEBUG_D("line emmm");
+        if ((snum > 0))
         {
-            smatch m;
-            regex r("\\w+");
+            smatch k;
+            smatch v;
+            regex kr("\\w+(?=\\s*=)");
+            regex vr("(?<==\\s*)\\w+");
 
-            if (regex_search(line.cbegin(), line.cend(), m, r))
+            DEBUG_D("line try key & value");
+            try 
             {
-                String key = *(m.begin());
-                String value = *(m.end() - 1);
-                skv_[(segment+key).c_str()] = value.c_str();
+                if (regex_search(line, k, kr))
+                cout << "k:" << k.str() << endl;
             }
-        }
+            catch (regex_error e)
+            {
+                cout << "err code:" << e.code() << endl;
+                cout << e.what() << endl;
+            }
 
-        regex r("\\w+");
+            try 
+            {
+                if (regex_search(line, v, vr))
+                cout << "v:" << v.str() << endl;
+            }
+            catch (regex_error e)
+            {
+                cout << "err code:" << e.code() << endl;
+                cout << e.what() << endl;
+            }
+
+            // String key = *(m.begin());
+            // String value = *(m.end() - 1);
+            // skv_[(segment+key).c_str()] = value.c_str();
+
+        }
+        DEBUG_D("line try segment");
+        regex r("\\w+(?=\\])");
         smatch m;
         if (regex_search(line, m, r))
         {
