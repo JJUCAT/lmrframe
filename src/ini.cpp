@@ -29,9 +29,10 @@ S32 Ini::Save(const String& pathname)
 
 String Ini::Read(const String& segment, const String& key)
 {
-    String ret = "null";
+    String sk = segment + ":";
+    sk += key;
 
-    return ret;
+    return skv_[sk];
 }
 
 S32 Ini::Write(const String& segment, const String& key, const String& value)
@@ -53,52 +54,28 @@ S32 Ini::Parse()
     
     while (num ++, getline(file, line))
     {
-        DEBUG_D("line[%d]:%s", num, line.c_str());
-        
         line = line.substr(0, line.find(';'));
-        DEBUG_D("line without note,[%d]:%s", num, line.c_str());
-        DEBUG_D("line emmm");
+        // DEBUG_D("line without note,[%d]:%s", num, line.c_str());
+
         if ((snum > 0))
         {
             smatch k;
             smatch v;
             regex kr("\\w+(?=\\s*=)");
-            regex vr("(?<==\\s*)\\w+");
+            regex vr("\\w+$");
 
-            DEBUG_D("line try key & value");
-            try 
+            if ((regex_search(line, k, kr)) && (regex_search(line, v, vr)))
             {
-                if (regex_search(line, k, kr))
-                cout << "k:" << k.str() << endl;
+                String key = k.str();
+                String value = v.str();
+                skv_[(segment+key).c_str()] = value.c_str();                
             }
-            catch (regex_error e)
-            {
-                cout << "err code:" << e.code() << endl;
-                cout << e.what() << endl;
-            }
-
-            try 
-            {
-                if (regex_search(line, v, vr))
-                cout << "v:" << v.str() << endl;
-            }
-            catch (regex_error e)
-            {
-                cout << "err code:" << e.code() << endl;
-                cout << e.what() << endl;
-            }
-
-            // String key = *(m.begin());
-            // String value = *(m.end() - 1);
-            // skv_[(segment+key).c_str()] = value.c_str();
-
         }
-        DEBUG_D("line try segment");
+
         regex r("\\w+(?=\\])");
         smatch m;
         if (regex_search(line, m, r))
         {
-            DEBUG_D("find segment");
             segment = *(m.begin());
             segment += ":";
             snum ++;
