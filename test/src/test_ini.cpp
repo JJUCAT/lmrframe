@@ -17,6 +17,13 @@ S32 test_ini()
     v = tini.Read("yamoto", "maga");
     DEBUG_D("Read segment[yamoto] key[maga]:%s", v.c_str());
 
+    tini.Write("yamoto", "maga", "keroro");
+    v = tini.Read("yamoto", "maga");
+    DEBUG_D("Read segment[yamoto] key[maga]:%s", v.c_str());
+    tini.Write("china", "guangdong", "shantou");
+    v = tini.Read("china", "guangdong");
+    DEBUG_D("Read segment[china] key[guangdong]:%s", v.c_str());
+
 
     DEBUG_D("test ini end");
 

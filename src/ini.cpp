@@ -20,13 +20,6 @@ Ini::~Ini()
 
 }
 
-S32 Ini::Save(const String& pathname)
-{
-    S32 ret = 0;
-
-    return ret;
-}
-
 String Ini::Read(const String& segment, const String& key)
 {
     String sk = segment + ":";
@@ -35,9 +28,57 @@ String Ini::Read(const String& segment, const String& key)
     return skv_[sk];
 }
 
-S32 Ini::Write(const String& segment, const String& key, const String& value)
+void Ini::Write(const String& segment, const String& key, const String& value)
+{
+    String sk = segment + ":";
+    sk += key;
+
+    skv_[sk] = value;
+}
+
+S32 Ini::Save(const String& pathname)
 {
     S32 ret = 0;
+    regex sr("\\w+(?=\\:)");
+    regex kr("\\w+$");
+    smatch sm,km;
+    String sk,s,k;
+
+    String cursegment = {}, buff = {};
+    ofstream file;
+
+    if (pathname.compare(pathname_))
+    {
+        for (auto iter : skv_)
+        {
+            sk = iter.first;
+            if ((regex_search(sk, sm, sr)) && (regex_search(sk, km, kr)))
+            {
+                s = sm.str();
+                k = km.str();
+                if (cursegment.compare(s))
+                {
+                    cursegment = s;
+                    buff += "\r\n";
+                    buff += "[";
+                    buff += cursegment;
+                    buff += "]\r\n";
+                }
+                buff += k;
+                buff += " = ";
+                buff += iter.second;
+                buff += "\r\n";
+            }
+
+        }
+
+
+
+    }
+    else
+    {
+
+    }
 
     return ret;
 }
@@ -92,7 +133,6 @@ S32 Ini::Parse()
 
     return ret;
 }
-
 
 
 
