@@ -25,7 +25,10 @@ String Ini::Read(const String& segment, const String& key)
     String sk = segment + ":";
     sk += key;
 
-    return skv_[sk];
+    if (skv_.count(sk) == 1)
+        return skv_[sk];
+    else
+        return "";
 }
 
 void Ini::Write(const String& segment, const String& key, const String& value)
@@ -38,47 +41,44 @@ void Ini::Write(const String& segment, const String& key, const String& value)
 
 S32 Ini::Save(const String& pathname)
 {
-    S32 ret = 0;
+    int ret = 0;
+
+    String name = pathname;
+    if (!name.compare("self"))
+        name = pathname_;
+        
     regex sr("\\w+(?=\\:)");
     regex kr("\\w+$");
     smatch sm,km;
     String sk,s,k;
-
     String cursegment = {}, buff = {};
-    ofstream file;
 
-    if (pathname.compare(pathname_))
+    for (auto iter : skv_)
     {
-        for (auto iter : skv_)
+        sk = iter.first;
+        if ((regex_search(sk, sm, sr)) && (regex_search(sk, km, kr)))
         {
-            sk = iter.first;
-            if ((regex_search(sk, sm, sr)) && (regex_search(sk, km, kr)))
+            s = sm.str();
+            k = km.str();
+            if (cursegment.compare(s))
             {
-                s = sm.str();
-                k = km.str();
-                if (cursegment.compare(s))
-                {
-                    cursegment = s;
-                    buff += "\r\n";
-                    buff += "[";
-                    buff += cursegment;
-                    buff += "]\r\n";
-                }
-                buff += k;
-                buff += " = ";
-                buff += iter.second;
+                cursegment = s;
                 buff += "\r\n";
+                buff += "[";
+                buff += cursegment;
+                buff += "]\r\n";
             }
-
+            buff += k;
+            buff += " = ";
+            buff += iter.second;
+            buff += "\r\n"; 
         }
-
-
-
     }
-    else
-    {
 
-    }
+    ofstream file;
+    file.open(name.c_str(), ios::out);
+    file << buff;
+    file.close();
 
     return ret;
 }
@@ -131,12 +131,10 @@ S32 Ini::Parse()
         i ++;
     }
 
+    file.close();
+
     return ret;
 }
-
-
-
-
 
 
 

@@ -44,6 +44,10 @@ lmrinc.h
 lmrtypes.h
 ../inc/lmrtypes.h
 
+/home/lmr/MyGit/lmrframe/src/clock.cpp
+clock.h
+/home/lmr/MyGit/lmrframe/src/clock.h
+
 /home/lmr/MyGit/lmrframe/src/ini.cpp
 ini.h
 /home/lmr/MyGit/lmrframe/src/ini.h
@@ -53,4 +57,10 @@ fstream
 -
 iostream
 -
+
+/home/lmr/MyGit/lmrframe/test/src/test_ini.cpp
+lmrinc.h
+/home/lmr/MyGit/lmrframe/test/src/lmrinc.h
+ini.h
+/home/lmr/MyGit/lmrframe/test/src/ini.h
 

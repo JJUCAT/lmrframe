@@ -54,7 +54,6 @@ CMAKE_BINARY_DIR = /home/lmr/MyGit/lmrframe/build
 
 # The main recursive "all" target.
 all: CMakeFiles/testlmrframe.dir/all
-all: CMakeFiles/lmrframe.dir/all
 
 .PHONY : all
 
@@ -65,7 +64,6 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/testlmrframe.dir/clean
-clean: CMakeFiles/lmrframe.dir/clean
 
 .PHONY : clean
 
@@ -76,7 +74,7 @@ clean: CMakeFiles/lmrframe.dir/clean
 CMakeFiles/testlmrframe.dir/all:
 	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/depend
 	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17 "Built target testlmrframe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10 "Built target testlmrframe"
 .PHONY : CMakeFiles/testlmrframe.dir/all
 
 # Build rule for subdir invocation for target.
@@ -95,33 +93,6 @@ testlmrframe: CMakeFiles/testlmrframe.dir/rule
 CMakeFiles/testlmrframe.dir/clean:
 	$(MAKE) -f CMakeFiles/testlmrframe.dir/build.make CMakeFiles/testlmrframe.dir/clean
 .PHONY : CMakeFiles/testlmrframe.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/lmrframe.dir
-
-# All Build rule for target.
-CMakeFiles/lmrframe.dir/all:
-	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/depend
-	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lmr/MyGit/lmrframe/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target lmrframe"
-.PHONY : CMakeFiles/lmrframe.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/lmrframe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmr/MyGit/lmrframe/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/lmrframe.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lmr/MyGit/lmrframe/build/CMakeFiles 0
-.PHONY : CMakeFiles/lmrframe.dir/rule
-
-# Convenience name for target.
-lmrframe: CMakeFiles/lmrframe.dir/rule
-
-.PHONY : lmrframe
-
-# clean rule for target.
-CMakeFiles/lmrframe.dir/clean:
-	$(MAKE) -f CMakeFiles/lmrframe.dir/build.make CMakeFiles/lmrframe.dir/clean
-.PHONY : CMakeFiles/lmrframe.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
