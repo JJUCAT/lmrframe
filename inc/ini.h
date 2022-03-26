@@ -15,7 +15,7 @@ public:
     Ini(String pathname, String objname = "ini");
     ~Ini();
 
-    S32 Save(const String& pathname = "self");
+    S32 Save(const String& pathname = "self");  
     String Read(const String& segment, const String& key);
     void Write(const String& segment, const String& key, const String& value);
 
