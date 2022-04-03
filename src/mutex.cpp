@@ -53,9 +53,9 @@ S32 Mutex::Destroy()
 
     return ret;
 }
-#if 0
+
 Cond::Cond(String name)
-    : Obj(name)
+    : Mutex(name)
 {
     cond_ = new pthread_cond_t;
 
@@ -63,24 +63,20 @@ Cond::Cond(String name)
     pthread_condattr_init(&attr);
     pthread_condattr_setclock(&attr, CLOCK_MONOTONIC);
     pthread_cond_init((pthread_cond_t*)cond_, &attr);
-
-
-    lock_ = new pthread_mutex_t;
-
-    pthread_mutex_init((pthread_mutex_t*)lock_, NULL);
 }
 
 S32 Cond::Wait(S32 timeout)
 {
     S32 ret;
 
-    pthread_mutex_lock((pthread_mutex_t*)lock_);
+    Lock();
 
     if (timeout > 0)
     {
         struct timespec time;
 
         clock_gettime(CLOCK_BOOTTIME, &time);
+        time.tv_sec += timeout;
         ret = pthread_cond_timedwait((pthread_cond_t*)cond_, (pthread_mutex_t*)lock_, &time);
     }
     else
@@ -88,7 +84,7 @@ S32 Cond::Wait(S32 timeout)
         ret = pthread_cond_wait((pthread_cond_t*)cond_, (pthread_mutex_t*)lock_);
     }
 
-    pthread_mutex_unlock((pthread_mutex_t*)lock_);
+    Unlock();
 
     return ret;
 }
@@ -99,20 +95,29 @@ S32 Cond::Signal(Bool flag)
 
     if (flag)
     {
-        ret = pthread_mutex_lock((pthread_mutex_t*)lock_);
+        Lock();
     }
 
     ret = pthread_cond_signal((pthread_cond_t*)cond_);
 
     if (flag)
     {
-        ret = pthread_mutex_unlock((pthread_mutex_t*)lock_);
+        Unlock();
     }
 
     return ret;
 }
-#endif
 
+S32 Cond::Broadcast()
+{
+    S32 ret = 0;
+
+    Lock();
+    ret = pthread_cond_broadcast((pthread_cond_t*)cond_);
+    Unlock();
+
+    return ret;
+}
 
 } // namespace lmr
 

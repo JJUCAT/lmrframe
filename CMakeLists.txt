@@ -45,11 +45,11 @@ set(TEST_LIST ${TEST})
 
 set(LMRFRAME ${SRC_LIST} ${MAIN})
 #compile executable file lmrframe
-#add_executable(lmrframe ${LMRFRAME})
-#target_include_directories(lmrframe PUBLIC "${PROJECT_BINARY_DIR}")
+add_executable(lmrframe ${LMRFRAME})
+target_include_directories(lmrframe PUBLIC "${PROJECT_BINARY_DIR}")
 
 #compile executable file testlmrframe
-add_executable(testlmrframe ${TEST_LIST} ${SRC_LIST})
+#add_executable(testlmrframe ${TEST_LIST} ${SRC_LIST})
 
 
 

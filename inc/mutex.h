@@ -16,7 +16,7 @@ public:
     S32 Trylock();
     S32 Destroy();
 
-private:
+protected:
     Void* lock_;
 }; // Class Mutex
 
@@ -38,22 +38,18 @@ private:
     Mutex* auto_mutex_;
 }; // Class AutoMutex 
 
-
-#if 0
-class Cond : public Obj 
+class Cond : private Mutex 
 {
 public:
     Cond(String name = "Cond");
 
     S32 Wait(S32 timeout = -1);
     S32 Signal(Bool flag = true);
-    S32 Broadcast(Void);
+    S32 Broadcast();
 
-private:
+protected:
     Void* cond_;
-    Void* lock_;
 }; // Class Cond
-#endif
 
 } // namespace lmr
 
