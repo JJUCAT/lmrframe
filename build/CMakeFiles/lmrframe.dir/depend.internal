@@ -26,6 +26,7 @@ CMakeFiles/lmrframe.dir/src/ini.cpp.o
  /home/lmr/MyGit/lmrframe/src/ini.cpp
 CMakeFiles/lmrframe.dir/src/logger.cpp.o
  ../inc/clock.h
+ ../inc/ini.h
  ../inc/lmrinc.h
  ../inc/lmrtypes.h
  ../inc/logger.h
